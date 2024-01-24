@@ -1,0 +1,28 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up g++
+      run: choco install mingw -y
+
+    - name: Build
+      run: |
+        g++ src/pseudo-sc.cpp src/iostream.cpp -Isrc/ -std=c++2a -O2 -static -o pseudo-sc.exe
+    
+    - name: Create Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: pseudo-windows
+        path: pseudo-sc.exe
