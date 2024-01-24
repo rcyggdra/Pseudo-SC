@@ -11,7 +11,7 @@
 #include <nowide/fstream.hpp>
 #include <nowide/iostream.hpp>
 
-#include "opencc-t2s.h"
+#include "tongwen-t2s.h"
 
 const char *usage = reinterpret_cast<const char *>(u8"用法：\n\t%s font.otd\n");
 const char *loadfilefail = reinterpret_cast<const char *>(u8"读取文件 %s 失败\n");
