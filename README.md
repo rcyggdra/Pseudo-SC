@@ -44,4 +44,4 @@ otfccbuild base.otd -O2 -o 生成的字体.ttf
 
 [Niels Lohmann](https://github.com/nlohmann) 的 [json](https://github.com/nlohmann/json) 库提供了非常漂亮的 C++ JSON 接口。本工具使用了修改版的 JSON 库，容许非标准编码的字符。
 
-“繁—简” 转换规则来自[郭家寶](https://github.com/BYVoid)的 [Open Chinese Convert](https://github.com/BYVoid/OpenCC) 项目。
+“繁—简” 转换规则来自[新同文堂](https://github.com/tongwentang)的 [TongWen Dict](https://github.com/tongwentang/tongwen-dict) 项目。
